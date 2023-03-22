@@ -7,7 +7,6 @@ import { SessionProvider } from "next-auth/react";
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
     return (
-        // Higher order component
         <SessionProvider session={session}>
             <Provider store={store}>
                 <Toaster />
